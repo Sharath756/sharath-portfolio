@@ -479,37 +479,50 @@ button{
 button:hover{
     background: #ff4566;
 }
-.social-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 30px;
-    max-width: 350px;
-    margin: 0 auto;
-    gap: 10px;
+
+            /*SOCIAL-MEDIA*/
+            
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 10px;
 }
+
 .social-media h2,
-.social-media span{
-    font: 600 1.5rem Poppins;
-}
-.social-media i{
-    background: #2a3343;
-    padding: 10px;
-    font-size: 1.5rem;
-    border-radius: 10px; 
-    transform: translateY(5px); 
-    transition: transform 0.5s ease,0.5s ease; 
-}
-.social-media i:hover{
-    color: #ff4566;
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(255, 69, 102, 0.4);
-
+.social-media span {
+  font: 600 1.5rem Poppins, sans-serif;
 }
 
-/* Footer section */
+.social-media a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.social-media i {
+  background: #2a3343;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transform: translateY(5px);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.social-media i:hover {
+  color: #ff4566;
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(255, 69, 102, 0.4);
+}
+              
+
+            /* Footer section */
 .footer {
     text-align: center;
     padding: 10px 0;
@@ -611,5 +624,104 @@ button:hover{
     }
 }
 
+@media screen and (max-width: 395px) {
+    .nav-logo h1 {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+    }
+    
+    .nav-elements a {
+        font-size: 0.9rem;
+        margin: 8px;
+    }
+    
+    .home-content h1 {
+        font-size: 1rem;
+    }
+    
+    .home-content span {
+        font-size: 1.4rem;
+    }
+    
+    .home-img {
+        max-width: 80vw;
+    }
+    
+    .about {
+        max-width: 95%;
+    }
+    
+    .about p {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    
+    .Education-Experience {
+        font-size: 1.2rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 0.9rem;
+    }
+    
+    .card p {
+        font-size: 0.7rem;
+    }
+    .skill-content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .skill-box {
+        margin: 15px 10px;
+        width: 90%;
+        justify-self: center;
+    }
+    .skill-box h1 {
+        font-size: 1.1rem;
+    }
+    
+    .skill-box p {
+        font-size: 0.9rem;
+    }
+    
+    .project-box h2 {
+        font-size: 1.1rem;
+    }
+    
+    .project-box p {
+        font-size: 0.9rem;
+    }
+    
+    .contacts h1, .contacts span {
+        font-size: 1.5rem;
+    }
+    
+    .contact-card h2 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-card a {
+        font-size: 0.8rem;
+    }
+    
+    .form-container input,
+    .form-container textarea {
+        width: 95%;
+    }
+    
+    .social-media h2,
+    .social-media span {
+        font-size: 1.2rem;
+    }
+    
+    .social-media i {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
 
  
