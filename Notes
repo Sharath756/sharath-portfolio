@@ -1,0 +1,9 @@
+/*
+color: #ff4566;
+box-shadow: rgba(255, 69, 102, 0.4);
+
+transform: translateY(5px); 
+transition: transform 0.5s ease,0.5s ease;
+
+transform: scale(1.02);
+box-shadow: 0 6px 12px rgba(255, 69, 102, 0.4);
