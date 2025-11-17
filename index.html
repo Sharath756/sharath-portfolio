@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoloio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+                     <!-- HEADER SECTION -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a>SHARATH <span>CHANDRA</span></a>
+        </div>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <div class="nav-elements" id="nav-elements">
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#SKILLS">SKILLS</a>
+            <a href="#SERVICES">SERVICES</a>
+            <a href="#CONTACTS">CONTACT</a>
+        </div>
+    </nav>
+    </header>
+   
+                        <!-- HOME SECTION -->
+                         
+    <section class="home-section" id="HOME">
+  <div class="home-container">
+    <i>Hello...</i>
+    <h1>I'm Sharathchandra Chary</h1>
+    <span>Frontend Web Developer</span>
+    <button class="resume-btn">
+      <a href="https://drive.google.com/file/d/1HyccOMMUnl4DE-2-GGO_KsMvaegjWRVC/view?usp=sharing">
+        resume ↗
+      </a></button>
+      <div class="social-media">
+   <a href="https://www.linkedin.com/in/sharathchandra01/"><img src="Images/linkedin.png"></a>
+   <a href="https://github.com/Sharath756"><img src="Images/github.png"></a>
+ 
+  </div>
+  </div>
+  <div class="Main-img">
+    <img src="Images/Main-img.png" alt="">
+  </div>
+</section>
+
+                         <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="ABOUT">
+  <div class="about-content">
+    <h1>About Me</h1>
+    <div class="about">
+      <p id="short-about">
+        I’m Sharathchandra Chary, a graduate in Electronics and Communication Engineering 
+        from Guru Nanak Institute of Technology. I am a motivated and detail-oriented
+        individual with a strong foundation in electronics, communication systems, and programming.
+      </p>
+      <p id="full-about" style="display:none;">
+        Alongside my core engineering background, I have developed a keen interest in frontend web development, 
+        focusing on creating clean, responsive, and user-centric interfaces using HTML, CSS, and 
+        JavaScript. I enjoy applying logical thinking and technical knowledge to design and implement
+        solutions that are both functional and visually appealing.
+        I’m eager to contribute to innovative projects where I can continue learning, collaborate with 
+        skilled professionals, and grow as a versatile engineer and developer.
+      </p>
+      <button class="about-button" onclick="toggleAbout()">see more ↗</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Education -->
+    <div class="Education-Experiance-container">
+      <div class="edu-exp">
+        <h1>Education</h1>
+      </div>
+      <div class="timeline">
+        <div class="Education-Experiance-box fade-in">
+          <span class="date">2021 - 2025</span>
+          <h4>B.Tech - Guru Nanak Institute of Technology - 6.8</h4>
+          <p>Electronics and Communication Engineering</p>
+        </div>
+        <div class="Education-Experiance-box fade-in">
+          <span class="date">2018 - 2020</span>
+          <h4>Intermediate - Mathru Sri Junior College - 84%</h4>
+          <p>Mathematics</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="Education-Experiance-container">
+      <div class="edu-exp">
+        <h1>Experience</h1>
+      </div>
+      <div class="timeline">
+        <div class="Education-Experiance-box fade-in">
+          <span class="date">February - May 2025</span>
+          <h4>Labmentix Pvt. Ltd</h4>
+          <p>Web Development Intern</p>
+          <a href="https://drive.google.com/file/d/1g-K7EK_-rzVt2ilK4lfmmhKWwhTqcvPo/view?usp=drive_link">see more ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+                       <!-- SKILLS SECTION -->
+
+                       
+  <section class="skill-section" id="SKILLS">
+  <h1>Tech Stack & Skills</h1>
+  <div class="skill-content">
+      <div class="skill-box">
+        <i class="fa-brands fa-html5"></i>
+        <h3 data-text="HTML">HTML</h3> 
+      </div>
+      <div class="skill-box">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3 data-text="CSS">CSS</h3> 
+      </div>
+      <div class="skill-box">
+        <i class="fa-brands fa-js"></i>
+        <h3 data-text="JavaScript">JavaScript</h3> 
+      </div>
+      <div class="skill-box">
+       <i class="fa-solid fa-database"></i>
+        <h3 data-text="SQL">SQL</h3> 
+      </div>
+      <div class="skill-box">
+         <i class="fa-solid fa-database"></i>
+        <h3 data-text="MongoDB">MongoDB</h3> 
+      </div>
+      <div class="skill-box">
+        <i class="fa-solid fa-c"></i>
+        <h3 data-text="C Programming">C Programming</h3> 
+      </div>
+      <div class="skill-box">
+       <i class="fa-brands fa-java"></i>
+        <h3 data-text="Java">Java</h3> 
+      </div>
+  </div>
+</section>
+
+
+
+
+                      <!-- SERVICES SECTION -->
+                       
+    <section class="service-section" id="SERVICES">
+      <h1>Where I Worked on</h1>
+      <div class="project-container">
+        <div class="project-box">
+          <h2>Personal Portfolio Web</h2>
+          <p>A fully responsive personal portfolio developed using 
+            HTML, CSS, and JavaScript, designed to provide a seamless 
+            and user-friendly interface showcasing personal details such 
+            as About, Skills, Projects, and Contact Information.</p>
+        </div>
+        <div class="project-box">
+          <h2>Reversible ALU Design</h2>
+          <p>A Single-Bit Arithmetic Logic Unit (ALU) designed with 
+            reversible logic gates to minimize power dissipation and 
+            enhance computational efficiency while performing basic 
+            arithmetic and logical operations.</p>
+        </div>
+        <div class="project-box">
+          <h2>High Speed VLSI Architecture</h2>
+          <p>A high-speed and area-efficient three-operand binary 
+              adder implemented using pre-computed bitwise addition and
+             reversible gate logic, achieving reduced delay, low power
+              consumption, and improved performance.</p>
+        </div>
+      </div>
+    </section>
+
+                        <!-- CONTACTS SECTION -->
+    <section class="contacts" id="CONTACTS">
+      <h1>Get in Touch</h1>
+      <div class="contact-container">
+        <div class="contact-card">
+          <i class="fa-regular fa-envelope"></i>
+          <h2>Mail</h2>
+          <a>sharathchandracharyjamboju@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2>Address</h2>
+          <a>Hyderabad, Telangana, India - 500070</a>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <h3>Send a message</h3>
+        <form>
+          <input type="email" placeholder="example@gmail.com" required>
+          <textarea placeholder="message here..." required></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </section>
+
+                         <!-- FOOTER SECTION -->
+<footer class="footer">
+  <p>&copy; 2025 Sharathchandra. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+  </body>  
+</html>
