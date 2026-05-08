@@ -42,23 +42,27 @@ function toggleAbout() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".Education-Experiance-box");
+  const revealTargets = document.querySelectorAll(
+    ".home-section, .about-section, .skill-section, .service-section, .contacts, .Education-Experiance-box, .skill-box, .project-box, .contact-card, .home-container i, .home-container h1, .home-container span, .home-container .resume-btn, .social-media img, .about-section h1, .about p, .about-button, .skill-section h1, .service-section h1, .project-box h2, .project-box p, .form-container h3, .form-container input, .form-container textarea, .form-container button"
+  );
 
   const appearOptions = {
-    threshold: 0.2,
-    rootMargin: "0px 0px -30px 0px"
+    threshold: 0.1,
+    rootMargin: "-20% 0px -10% 0px"
   };
 
-  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  const appearOnScroll = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      if (entry.intersectionRatio > 0.1) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
     });
   }, appearOptions);
 
-  boxes.forEach(box => {
-    appearOnScroll.observe(box);
+  revealTargets.forEach(item => {
+    appearOnScroll.observe(item);
   });
 });
 
@@ -78,5 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
   image.addEventListener('mouseleave', () => {
     image.style.transform = 'rotateX(0deg) rotateY(0deg)';
   });
-
 
